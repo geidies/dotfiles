@@ -99,7 +99,6 @@ export CPP=/usr/bin/cpp
 ## git
 
 echo "Setting up git"
-. ~/.git-completion.sh
 export PS1="\t \W\$(git-radar --bash --fetch) \\$ "
 export LC_CTYPE=en_US.UTF-8
 
