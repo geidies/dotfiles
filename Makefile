@@ -2,7 +2,7 @@
 
 default:
 	git submodule update --init
-	apm install --packages-file atom/packages.lst
+	apm install --packages-file atom/.atom/packages.lst
 
 install:
 	stow atom
