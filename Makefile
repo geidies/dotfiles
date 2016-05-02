@@ -1,4 +1,4 @@
-.PHONY: default install
+.PHONY: default install save-atom
 
 default:
 	git submodule update --init
@@ -11,3 +11,6 @@ install:
 	stow gem
 	stow git
 	stow vim
+
+save-atom:
+	apm list --bare --installed > atom/.atom/packages.lst
