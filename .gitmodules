@@ -1,24 +1,24 @@
-[submodule "vim/colors/monokai"]
-	path = vim/colors/monokai
+[submodule "vim/.vim/colors/monokai"]
+	path = vim/.vim/colors/monokai
 	url = https://github.com/sickill/vim-monokai.git
-[submodule "vim/colors/phoenix"]
-	path = vim/colors/phoenix
+[submodule "vim/.vim/colors/phoenix"]
+	path = vim/.vim/colors/phoenix
 	url = https://github.com/widatama/vim-phoenix.git
-[submodule "vim/bundle/vim-elixir"]
-	path = vim/bundle/vim-elixir
+[submodule "vim/.vim/bundle/vim-elixir"]
+	path = vim/.vim/bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
-[submodule "vim/bundle/fugitive"]
-	path = vim/bundle/fugitive
+[submodule "vim/.vim/bundle/fugitive"]
+	path = vim/.vim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "vim/bundle/puppet"]
-	path = vim/bundle/puppet
+[submodule "vim/.vim/bundle/puppet"]
+	path = vim/.vim/bundle/puppet
 	url = https://github.com/rodjek/vim-puppet.git
-[submodule "vim/bundle/tabular"]
-	path = vim/bundle/tabular
+[submodule "vim/.vim/bundle/tabular"]
+	path = vim/.vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
-[submodule "vim/bundle/Dockerfile"]
-	path = vim/bundle/Dockerfile
-	url = https://github.com/ekalinin/Dockerfile.vim.git
-[submodule "vim/bundle/Vagrantfile"]
-	path = vim/bundle/Vagrantfile
+[submodule "vim/.vim/bundle/vagrantfile"]
+	path = vim/.vim/bundle/vagrantfile
 	url = https://github.com/jwhitley/Vagrantfile.vim.git
+[submodule "vim/.vim/bundle/dockerfile"]
+	path = vim/.vim/bundle/dockerfile
+	url = https://github.com/ekalinin/Dockerfile.vim.git
