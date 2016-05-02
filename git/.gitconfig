@@ -1,0 +1,23 @@
+[user]
+	name = Sebastian Geidies
+	email = sgeidies@thoughtworks.com
+[push]
+	default = upstream
+[alias]
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  lom = log --graph --decorate --pretty=medium --abbrev-commit
+  loma = log --graph --decorate --pretty=medium --abbrev-commit --all
+  lomas = log --graph --decorate --pretty=medium --abbrev-commit --all --stat
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches
+  lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative  --all
+  lgba = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches --all
+
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[credential]
+	helper = osxkeychain

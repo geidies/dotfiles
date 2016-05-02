@@ -1,0 +1,24 @@
+[submodule "vim/colors/monokai"]
+	path = vim/colors/monokai
+	url = https://github.com/sickill/vim-monokai.git
+[submodule "vim/colors/phoenix"]
+	path = vim/colors/phoenix
+	url = https://github.com/widatama/vim-phoenix.git
+[submodule "vim/bundle/vim-elixir"]
+	path = vim/bundle/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/puppet"]
+	path = vim/bundle/puppet
+	url = https://github.com/rodjek/vim-puppet.git
+[submodule "vim/bundle/tabular"]
+	path = vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "vim/bundle/Dockerfile"]
+	path = vim/bundle/Dockerfile
+	url = https://github.com/ekalinin/Dockerfile.vim.git
+[submodule "vim/bundle/Vagrantfile"]
+	path = vim/bundle/Vagrantfile
+	url = https://github.com/jwhitley/Vagrantfile.vim.git

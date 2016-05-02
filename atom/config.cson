@@ -1,0 +1,36 @@
+"*":
+  "atom-beautify":
+    _analyticsUserId: "e084d1f6-e2d6-49ee-bdc3-1d3ff535ab7f"
+  "autocomplete-plus": {}
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "tree-view"
+    ]
+  editor:
+    fontSize: 18
+    invisibles: {}
+  "exception-reporting":
+    userId: "02b5d08d-2b54-cf78-017b-7dee30ac148d"
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  nuclide:
+    "nuclide-home":
+      showHome: false
+  "one-dark-ui": {}
+  rspec:
+    command: "rspec"
+  "tree-view": {}
+  welcome:
+    showOnStartup: false

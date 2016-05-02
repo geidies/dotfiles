@@ -1,0 +1,59 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background color of the tree view
+.tree-view {
+  // background-color: whitesmoke;
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  // color: white;
+  // background-color: hsl(180, 24%, 12%);
+}
+
+.editor.vim-mode.command-mode::shadow {
+    .cursor.idle, .cursor.idle.blink-off {
+        background-color: #00ff44; // bright green
+        visibility: visible;
+        opacity: .5;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #ff0000; // bright red
+    }
+    .cursor.idle.blink-off {
+        //visibility: hidden; // make hidden for complete blink
+        opacity: .55; // weird subtle little pulse, almost can't see it.
+    }
+}
+
+// with react:
+.editor.vim-mode.command-mode::shadow {
+    .cursors .cursor, .cursors.blink-off .cursor {
+        background-color: #00ff44; // bright green
+        visibility: visible;
+        opacity: .6;
+        border-style: solid;
+        border-width: 1px;
+        //border-color: #ff0000; // bright red
+        border-color: #FFFFFF; // white
+    }
+    .cursors.blink-off .cursor {
+        //visibilaity: hidden; // make hidden for complete blink
+        opacity: .63; // weird subtle little pulse, almost can't see it.
+    }
+}
