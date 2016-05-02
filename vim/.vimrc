@@ -14,7 +14,7 @@ filetype plugin indent on    " required
 execute pathogen#infect()
 " filetype plugin indent on
 syntax enable
-colorscheme sunburst
+colorscheme Sunburst
 set ai
 set tabstop=2
 set shiftwidth=2

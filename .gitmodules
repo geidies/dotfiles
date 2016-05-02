@@ -22,3 +22,6 @@
 [submodule "vim/.vim/bundle/dockerfile"]
 	path = vim/.vim/bundle/dockerfile
 	url = https://github.com/ekalinin/Dockerfile.vim.git
+[submodule "vim/.vim/colors/sunburst"]
+	path = vim/.vim/colors/sunburst
+	url = https://github.com/sickill/vim-sunburst.git
