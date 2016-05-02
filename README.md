@@ -6,6 +6,7 @@ A collection of configuration to be used across computers.
 ## Prerequisites
 
 You should have [GNU Stow](https://www.gnu.org/software/stow/) installed. There is a package for brew, apt, pacman and yum (and possibly others as well, since it is pure perl). Also, the [atom text editor](https://github.com/atom) should of course be installed if you want to use the configuration for it - also the make tasks won't work if it is not installed.
+To have the bash prompt operational, install (git-radar)[https://github.com/michaeldfallen/git-radar].
 
 ## Installation ##
 
