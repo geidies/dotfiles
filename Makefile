@@ -1,13 +1,19 @@
 .PHONY: default install save-atom
 
-default: prepare %.vim
+VIM_COLORS = vim/.vim/colors/
+COLOR_SRC = $(wildcard vim/.vim/colors/*/colors/*.vim)
+COLOR_TARGETS = $(addprefix vim/.vim/colors/,$(notdir $(COLOR_SRC)))
+
+default: prepare $(COLOR_TARGETS)
 
 prepare: 
 	git submodule update --init
 	apm install --packages-file atom/.atom/packages.lst
 
-vim/.vim/colors/%.vim: vim/.vim/colors/*/colors/%.vim
+$(COLOR_TARGETS): $(COLOR_SRC)
 	ln -s $(subst vim/.vim/colors/,,$<) $@
+
+print-%  : ; @echo $* = $($*)
 
 install:
 	stow atom
