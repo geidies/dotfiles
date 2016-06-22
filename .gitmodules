@@ -25,3 +25,9 @@
 [submodule "vim/.vim/colors/sunburst"]
 	path = vim/.vim/colors/sunburst
 	url = https://github.com/sickill/vim-sunburst.git
+[submodule "vim/.vim/colors/alduin"]
+	path = vim/.vim/colors/alduin
+	url = https://github.com/AlessandroYorba/Alduin.git
+[submodule "vim/.vim/bundle/surround"]
+	path = vim/.vim/bundle/surround
+	url = git://github.com/tpope/vim-surround.git

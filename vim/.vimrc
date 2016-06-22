@@ -14,7 +14,10 @@ filetype plugin indent on    " required
 execute pathogen#infect()
 " filetype plugin indent on
 syntax enable
-colorscheme Sunburst
+let g:alduin_Contract_Vampirism = 1
+let g:alduin_Shout_Aura_Whisper = 1
+let g:alduin_Shout_Fire_Breath = 0
+colorscheme alduin
 set ai
 set tabstop=2
 set shiftwidth=2
