@@ -7,7 +7,7 @@ alias pine="alpine"
 alias such=git
 alias very=git
 alias wow='git status' 
-alias amaze='git pull --rebase' 
+alias amaze='git pull --rebase'
 
 alias ICanHaz='fortune|cowsay|lolcat'
 
@@ -19,6 +19,7 @@ export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 export GREP_OPTIONS='--color=auto'
 export VISUAL=vi
 export EDITOR=vi
+export HOME=/Users/sgeidies
 
 echo "Sourcing .bashrc"
 if [ -e ~/.bashrc ]; then
@@ -64,9 +65,9 @@ export PATH=$PATH:/usr/local/lib/gradle/bin
 ## ruby
 
 echo "Setting up ruby"
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-eval "$(rbenv init -)"
 export PATH=/opt/chefdk/bin:${PATH}
+[[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# eval "$(rbenv init -)"
 
 
 ## DOCKER
@@ -80,21 +81,22 @@ export PATH=/opt/chefdk/bin:${PATH}
 # fi
 # eval $(boot2docker shellinit 2>/dev/null)
 
-echo "Setting up docker"
-B2D_STATUS=$(docker-machine status default)
-if [ "$B2D_STATUS" != "Running" ]; then
-  echo "docker-machine is not running. Status is: $B2D_STATUS."
-  echo "Trying to powerup."
-  docker-machine start default
-fi
-eval $(/usr/local/bin/docker-machine env default 2>/dev/null)
+# echo "Setting up docker"
+# B2D_STATUS=$(docker-machine status default)
+# if [ "$B2D_STATUS" != "Running" ]; then
+  # echo "docker-machine is not running. Status is: $B2D_STATUS."
+  # echo "Trying to powerup."
+  # docker-machine start default
+# fi
+# eval $(/usr/local/bin/docker-machine env default 2>/dev/null)
 
 ## clang / gcc
 
 echo "Setting up clang/gcc"
 export GOPATH=$HOME/src/go
-export CC=/usr/bin/cc
-export CPP=/usr/bin/cpp
+# Only set temporary - fucks up ruby installation through rvm/rbenv
+# export CC=/usr/bin/cc
+# export CPP=/usr/bin/cpp
 
 ## git
 
@@ -102,5 +104,7 @@ echo "Setting up git"
 export PS1="\t \W\$(git-radar --bash --fetch) \\$ "
 export LC_CTYPE=en_US.UTF-8
 
+echo "setting up brew"
+export PATH="/usr/local/sbin:$PATH"
 
 complete -C "mite auto-complete" mite

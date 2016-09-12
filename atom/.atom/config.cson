@@ -19,7 +19,8 @@
       "tree-view"
     ]
   editor:
-    fontSize: 18
+    fontFamily: "Input Mono"
+    fontSize: 21
     invisibles: {}
   "exception-reporting":
     userId: "02b5d08d-2b54-cf78-017b-7dee30ac148d"

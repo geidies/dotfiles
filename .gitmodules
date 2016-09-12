@@ -31,3 +31,6 @@
 [submodule "vim/.vim/bundle/surround"]
 	path = vim/.vim/bundle/surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "vim/.vim/bundle/terraform"]
+	path = vim/.vim/bundle/terraform
+	url = https://github.com/hashivim/vim-terraform.git

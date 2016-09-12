@@ -1,14 +1,18 @@
-atom-beautify@0.28.27
-ex-mode@0.7.0
+activate-power-mode@0.7.2
+atom-beautify@0.29.10
+ex-mode@0.11.0
 grunt-runner@0.14.0
-language-babel@2.16.0
+language-babel@2.32.2
 language-jsx@0.1.1
-neon-cursor@1.4.0
-nuclide@0.127.0
-react@0.14.2
+language-terraform@0.7.4
+linter-rubocop@0.4.7
+neon-cursor@1.6.0
+nuclide@0.159.0
 rspec@0.3.2
+rubocop-auto-correct@1.5.1
 sunburst@0.3.0
 sundown-syntax@0.1.0
-vim-mode@0.63.0
+vim-mode@0.65.1
 zenburn@3.0.0
+
 
