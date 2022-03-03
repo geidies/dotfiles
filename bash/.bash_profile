@@ -20,6 +20,7 @@ export GREP_OPTIONS='--color=auto'
 export VISUAL=vi
 export EDITOR=vi
 export HOME=/Users/sgeidies
+export GRADLE_USER_HOME=${HOME}/.gradle
 
 echo "Sourcing .bashrc"
 if [ -e ~/.bashrc ]; then
@@ -59,8 +60,9 @@ fi
 ## JAVA
 
 echo "Setting up java"
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME=`/usr/libexec/java_home -v 14`
 export PATH=$PATH:/usr/local/lib/gradle/bin
+export ANDROID_HOME=~/Library/Android/sdk
 
 ## ruby
 
@@ -69,6 +71,8 @@ export PATH=/opt/chefdk/bin:${PATH}
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 # eval "$(rbenv init -)"
 
+echo "Setting up perl"
+export PERL5LIB=~/perl5/lib/perl5
 
 ## DOCKER
 
@@ -107,4 +111,19 @@ export LC_CTYPE=en_US.UTF-8
 echo "setting up brew"
 export PATH="/usr/local/sbin:$PATH"
 
+echo "setting up fastlane"
+export PATH="$HOME/.fastlane/bin:$PATH"
+
+echo "setting kubernetes aliases"
 complete -C "mite auto-complete" mite
+
+source $HOME/.profile
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/geidies_sebastian/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/geidies_sebastian/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/geidies_sebastian/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/geidies_sebastian/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
+export PATH=${PATH}:${HOME}/bin
+# alias cat=lolcat

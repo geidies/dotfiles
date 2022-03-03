@@ -24,6 +24,6 @@ set shiftwidth=2
 set expandtab
 set hlsearch
 
-set diffopt+=iwhite
+" set diffopt+=white
 " Plugin 'elixir-lang/vim-elixir" 
 " Plugin 'ekalinin/Dockerfile.vim'

@@ -8,7 +8,7 @@ default: prepare $(COLOR_TARGETS)
 
 prepare: 
 	git submodule update --init
-	apm install --packages-file atom/.atom/packages.lst
+	# apm install --packages-file atom/.atom/packages.lst
 
 $(COLOR_TARGETS): $(COLOR_SRC)
 	ln -s $(subst vim/.vim/colors/,,$<) $@
