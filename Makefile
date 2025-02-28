@@ -16,7 +16,7 @@ $(COLOR_TARGETS): $(COLOR_SRC)
 print-%  : ; @echo $* = $($*)
 
 install:
-	stow atom
+	stow mac
 	stow bash
 	stow completions
 	stow gem

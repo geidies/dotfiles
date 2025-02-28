@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/Users/geidiessebastian/Developer/src/wealth/WM2/web-app/src/layout/components/header'
+let g:netrw_dirhist_4='/Users/geidiessebastian/Developer/src/wealth/WM2/web-app'
+let g:netrw_dirhist_3='/Users/geidiessebastian/Developer/src/wealth/WM2/web-app/src/routes/myRelationships/components/insightsTab'
+let g:netrw_dirhist_2='/Users/geidiessebastian/Developer/src/wealth/WM2/web-app/src/hooks'
+let g:netrw_dirhist_1='/Users/geidiessebastian/Developer/src/wealth/WM2/server/sbai/core/migrations'
+let g:netrw_dirhist_0='/Users/geidiessebastian/Developer/src/wealth/WM2/server/sbai/pipeline_metadata'
+let g:netrw_dirhist_9='/Users/geidiessebastian/Developer/src/wealth/WM2/env_temp'
+let g:netrw_dirhist_8='/Users/geidiessebastian/Developer/src/rome/frontend/packages/app/ios/app.xcodeproj'
+let g:netrw_dirhist_7='/Users/geidiessebastian/Developer/src/rome/backend/core/src/main/resources'
+let g:netrw_dirhist_6='/Users/geidiessebastian/Developer/src/rome/frontend/node_modules/react-native-config'

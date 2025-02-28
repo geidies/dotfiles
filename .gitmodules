@@ -34,3 +34,15 @@
 [submodule "vim/.vim/bundle/terraform"]
 	path = vim/.vim/bundle/terraform
 	url = https://github.com/hashivim/vim-terraform.git
+[submodule "vim/.vim/pack/jvirtanen/start/vim-hcl"]
+	path = vim/.vim/pack/jvirtanen/start/vim-hcl
+	url = https://github.com/jvirtanen/vim-hcl.git
+[submodule "vim/.vim/pack/vim-javascript/start/vim-javascript"]
+	path = vim/.vim/pack/vim-javascript/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim/.vim/pack/typescript/start/typescript-vim"]
+	path = vim/.vim/pack/typescript/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "vim/.vim/pack/vim-jsx-pretty/start/vim-jsx-pretty"]
+	path = vim/.vim/pack/vim-jsx-pretty/start/vim-jsx-pretty
+	url = git@github.com:MaxMEllon/vim-jsx-pretty.git

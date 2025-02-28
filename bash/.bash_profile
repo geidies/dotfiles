@@ -10,6 +10,7 @@ alias wow='git status'
 alias amaze='git pull --rebase'
 
 alias ICanHaz='fortune|cowsay|lolcat'
+alias vizgit='gource -2560x1024 -s 1 -i 2 -i 100 --high-dpi ../backend/'
 
 alias shutdownVagrant='vagrant global-status | grep virtualbox | cut -c 1-9 | while read line; do echo $line; vagrant halt $line; done'
 
@@ -21,6 +22,10 @@ export VISUAL=vi
 export EDITOR=vi
 export HOME=/Users/sgeidies
 export GRADLE_USER_HOME=${HOME}/.gradle
+export SSL_CERT_FILE=${HOME}/.ca_certs/ZscalerRootCertificate-2048-SHA256.pem
+
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 
 echo "Sourcing .bashrc"
 if [ -e ~/.bashrc ]; then
@@ -36,7 +41,8 @@ function start_agent {
      echo succeeded
      chmod 600 "${SSH_ENV}"
      . "${SSH_ENV}" > /dev/null
-     /usr/bin/ssh-add;
+     /usr/bin/ssh-add ~/.ssh/id_rsa
+     /usr/bin/ssh-add ~/.ssh/id_ed25519
 }
 if [ -f "${SSH_ENV}" ]; then
      . "${SSH_ENV}" > /dev/null
@@ -60,7 +66,7 @@ fi
 ## JAVA
 
 echo "Setting up java"
-export JAVA_HOME=`/usr/libexec/java_home -v 14`
+export JAVA_HOME=`/usr/libexec/java_home -v 17`
 export PATH=$PATH:/usr/local/lib/gradle/bin
 export ANDROID_HOME=~/Library/Android/sdk
 
@@ -72,27 +78,7 @@ export PATH=/opt/chefdk/bin:${PATH}
 # eval "$(rbenv init -)"
 
 echo "Setting up perl"
-export PERL5LIB=~/perl5/lib/perl5
-
-## DOCKER
-
-# echo "Setting up docker"
-# B2D_STATUS=$(boot2docker status)
-# if [ "$B2D_STATUS" != "running" ]; then
-#   echo "boot2docker is not running. Status is: $B2D_STATUS."
-#   echo "Trying to powerup."
-#   boot2docker up
-# fi
-# eval $(boot2docker shellinit 2>/dev/null)
-
-# echo "Setting up docker"
-# B2D_STATUS=$(docker-machine status default)
-# if [ "$B2D_STATUS" != "Running" ]; then
-  # echo "docker-machine is not running. Status is: $B2D_STATUS."
-  # echo "Trying to powerup."
-  # docker-machine start default
-# fi
-# eval $(/usr/local/bin/docker-machine env default 2>/dev/null)
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 
 ## clang / gcc
 
@@ -110,6 +96,7 @@ export LC_CTYPE=en_US.UTF-8
 
 echo "setting up brew"
 export PATH="/usr/local/sbin:$PATH"
+eval "$(/opt/homebrew/bin/rbenv init - bash)"
 
 echo "setting up fastlane"
 export PATH="$HOME/.fastlane/bin:$PATH"

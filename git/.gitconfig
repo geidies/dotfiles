@@ -21,3 +21,31 @@
   status = auto
 [credential]
 	helper = osxkeychain
+[pull]
+	rebase = true
+[http]
+	sslcainfo = /Users/sgeidies/.ca_certs/ZscalerRootCertificate-2048-SHA256.pem
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[init]
+	defaultBranch = main
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[commit]
+	verbose = true
