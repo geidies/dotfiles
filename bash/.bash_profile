@@ -96,15 +96,11 @@ export LC_CTYPE=en_US.UTF-8
 
 echo "setting up brew"
 export PATH="/usr/local/sbin:$PATH"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(/opt/homebrew/bin/rbenv init - bash)"
-
-echo "setting up fastlane"
-export PATH="$HOME/.fastlane/bin:$PATH"
 
 echo "setting kubernetes aliases"
 complete -C "mite auto-complete" mite
-
-source $HOME/.profile
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/geidies_sebastian/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/geidies_sebastian/Downloads/google-cloud-sdk/path.bash.inc'; fi
@@ -114,3 +110,7 @@ if [ -f '/Users/geidies_sebastian/Downloads/google-cloud-sdk/completion.bash.inc
 
 export PATH=${PATH}:${HOME}/bin
 # alias cat=lolcat
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
